@@ -10,7 +10,7 @@ char ch;
 
 
 
-HHHHint main(void){ 
+int main(void){ 
 
 
   LCD_init();
