@@ -15,7 +15,7 @@
 #define E_PIN 7
  
 
-#define LCD_COLS 16  // Adjust based on your LCD
+#define LCD_COLS 20  // Adjust based on your LCD
 #define LCD_ROWS 4   // 4 lines
 
 unsigned char current_row = 0;  // Current row (0 to 3)
@@ -162,7 +162,7 @@ void tempchar_fahrenheit(long value)
     }
 
     // Logic for controlling GPIO pins based on temperature
-    if (TempF > 58) // Fahrenheit equivalent of 20°C
+    if (TempF > 58) // Fahrenheit equivalent of 20Â°C
     {
         // Use GPIO_Write to set pins
         GPIO_Write('A', 2, 1); // Set PA2 high
@@ -249,7 +249,7 @@ void tempchar_celsius(long value)
     }
 
     // Logic for controlling GPIO pins based on temperature
-    if (Temp > 10) // Fahrenheit equivalent of 20°C
+    if (Temp > 10) // Fahrenheit equivalent of 20Â°C
     {
         // Use GPIO_Write to set pins
         GPIO_Write('A', 2, 1); // Set PA2 high
