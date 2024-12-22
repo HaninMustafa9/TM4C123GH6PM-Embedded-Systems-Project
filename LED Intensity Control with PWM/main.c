@@ -1,7 +1,7 @@
 /* Generates 50Hz and variable duty cycle on PF2 pin of TM4C123 Tiva C Launchpad */
 /* PWM1 module and PWM generator 3 of PWM1 module is used. Hence PWM channel */
 #include "TM4C123GH6PM.h"
-void SystemInit() {}
+
 	int duty_cycle;
 	void Delay_ms(int);
 	unsigned int adc_value;
