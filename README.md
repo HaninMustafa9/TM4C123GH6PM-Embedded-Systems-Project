@@ -60,7 +60,7 @@ cd TM4C123GH6PM-Embedded-Systems-Project
 | **Functionality**      | **TM4C123 Pin** | **Peripheral** |
 |------------------------|-----------------|----------------|
 | Temperature Sensor     | Internal        | ADC0           |
-| LED (PWM)              | PB6 (example)   | PWM1           |
+| LED (PWM)              | PF2             | PWM1           |
 | UART (LCD Interface)   | PA0, PA1        | UART0          |
 
 ### 4. Compile and Flash
