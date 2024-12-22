@@ -43,10 +43,10 @@ void GPIO_Init(char port, unsigned char pin, unsigned char direction, unsigned c
     if (base == 0) return; 
 
     // Unlock and commit for special pins
-    if (base == GPIO_PORTF_BASE && (pin == 0 || pin == 4)) {
+    
         *((volatile unsigned long *)(base + GPIO_LOCK_OFFSET)) = GPIO_UNLOCK_KEY; // Unlock GPIOCR
         *((volatile unsigned long *)(base + GPIO_CR_OFFSET)) |= (1 << pin);      // Allow changes
-    }
+    
 
     // Set direction
     if (direction) {
