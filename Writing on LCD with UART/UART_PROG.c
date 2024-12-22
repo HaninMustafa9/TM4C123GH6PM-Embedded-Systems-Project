@@ -22,11 +22,6 @@ unsigned char UART_InChar(void){
   while((UART0_FR_R&UART_FR_RXFE) != 0);
   return((unsigned char)(UART0_DR_R&0xFF));
 }
-void UART_OutChar(unsigned char data){
-  while((UART0_FR_R&UART_FR_TXFF) != 0);
-  UART0_DR_R = data;
-}
-
 
 void UART_OutString(char *pt){
   while(*pt){
